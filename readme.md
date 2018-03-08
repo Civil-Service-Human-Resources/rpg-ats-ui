@@ -13,8 +13,8 @@
 ## Compiling SASS
 `gulp sass`
 
-## Creating a production version of CSS
-`gulp sass --production`
-
 ## Watching for SASS changes
 `gulp sass:dev`
+
+## Creating a production version of CSS
+`npm run build`

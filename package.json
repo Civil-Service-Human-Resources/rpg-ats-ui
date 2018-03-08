@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && gulp sass --production && gulp copy-assets"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,14 @@
   "homepage": "https://github.com/Civil-Service-Human-Resources/rpg-ats-ui#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.4",
     "yargs": "^11.0.0"
+  },
+  "dependencies": {
+    "govuk-elements-sass": "^3.1.2",
+    "govuk_frontend_toolkit": "^7.4.2"
   }
 }
