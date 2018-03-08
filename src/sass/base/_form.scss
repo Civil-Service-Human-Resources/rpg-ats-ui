@@ -1,0 +1,71 @@
+input,
+textarea,
+select {
+    @include media(tablet) {
+        max-width: 350px;
+    }
+
+    &:focus {
+        @include focus-state;
+        border-color: $text-colour;
+        box-shadow: none;
+    }
+
+    .item_error & {
+        border-color: $error-colour !important;
+        border-width: 4px;
+    }
+}
+
+.form-group,
+.form-horizontal .form-group {
+    margin: 0 0 $gutter-half;
+    padding: 0;
+
+    @include media(tablet) {
+        margin: 0 0 $gutter;
+    }
+
+    &.item_error {
+        border-left: 5px solid $error-colour;
+        padding-left: $gutter-half;
+
+        label {
+            color: $text-colour;
+        }
+    }
+}
+
+.control-label,
+.form-horizontal .control-label {
+    @include bold-19;
+    display: block;
+    float: none;
+    line-height: 1.31579;
+    margin: 0;
+    padding: 0 0 2px;
+    text-align: left;
+    width: auto;
+}
+
+.form_value {
+    float: none;
+    padding: 0;
+    width: auto;
+}
+
+.form-control {
+    height: auto;
+
+    &:focus {
+        @include focus-state;
+        border-color: $text-colour;
+    }
+}
+
+input.form-control,
+textarea.form-control {
+    -webkit-appearance: none;
+    border-radius: 0;
+    width: 100%;
+}

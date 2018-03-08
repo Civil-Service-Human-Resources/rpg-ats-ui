@@ -1,0 +1,53 @@
+body {
+  font-size: 12px;
+  line-height: 1; }
+
+input, #skip, #options, #leftcolumn, #user_language_wrap, #skip-to-content, .config_banner, .header, .footer {
+  display: none; }
+
+img {
+  border: none; }
+
+.hform_lbl_text {
+  font-weight: bold; }
+
+#trackermenu li, #symbol_key li {
+  list-style-type: none; }
+
+:link, :visited {
+  text-decoration: none;
+  color: #000; }
+
+.mand_star {
+  color: red; }
+
+h1 {
+  font-size: 140%; }
+
+h2 {
+  font-size: 120%; }
+
+.print-hidden {
+  display: none; }
+
+.print-visible {
+  display: block; }
+
+.form-horizontal .control-label {
+  text-align: right;
+  margin-bottom: 0;
+  padding-top: 7px; }
+.form-horizontal .form-group {
+  margin: 4px 0; }
+.form-horizontal .form-control-static {
+  min-height: 0; }
+.form-horizontal .table-responsive > .table > thead > tr > th {
+  white-space: normal; }
+.form-horizontal .cell .type_monthyear {
+  width: auto; }
+.form-horizontal .col-sm-3 {
+  width: 40%;
+  float: left; }
+.form-horizontal .col-sm-9 {
+  width: 60%;
+  float: left; }

@@ -1,0 +1,46 @@
+// general hackiness and undoing of styling
+
+body.configjail,
+body.fasttrack {
+    padding: 0;
+}
+
+.config_banner,
+.social-media-login-links,
+.cookie-policy,
+.nav-top,
+.user-head-section {
+    display: none;
+}
+
+form.hform button {
+    clear: both;
+    float: none;
+}
+
+form.cand_account_form {
+    max-width: none;
+}
+
+#item_login_form_password {
+    margin-bottom: 0;
+}
+
+#login_form_form_submit,
+#register_form_form_submit {
+    margin: 0 0 $gutter-half;
+
+    @include media(tablet) {
+        margin: 0 0 $gutter;
+    }
+}
+
+.forgot_pass_link,
+.create_account_link,
+.login_form_link {
+    @include core-19;
+    clear: both;
+    display: block;
+    margin: 0 0 $gutter-half;
+    text-align: left;
+}

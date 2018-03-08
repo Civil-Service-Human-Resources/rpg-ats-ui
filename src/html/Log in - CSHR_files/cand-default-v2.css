@@ -1,0 +1,440 @@
+/* DOCUMENT INFORMATION
+    - Document: Civil Service Resourcing Brand
+    - Version:  0.0.1
+    - Client:   Civil Service Jobs
+    - SystemID: 541
+    - Author:   R. Bailey
+    - Date:     06/11/2017
+*/
+/* Copyright (c) 2011 by Margaret Calvert & Henrik Kubel. All rights reserved. The font has been customised for exclusive use on gov.uk. This cut is not commercially available. */
+@font-face {
+  font-family: 'nta';
+  src: url("fonts/nta.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nta';
+  src: url("fonts/nta_bold.woff") format("woff");
+  font-weight: bold;
+}
+
+html,
+body {
+  font-family: 'nta', Arial, Helvetica, sans-serif;
+  font-size: 19px;
+}
+
+h1.section, h1.job-board-title {
+  font-weight: 700;
+}
+
+p {
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.3157894737;
+}
+
+a {
+  color: #005ea5;
+  padding: 2px;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  background: #ffbf47;
+  outline: 3px solid #ffbf47;
+}
+
+button,
+.btn,
+.interview_slot_book_button {
+  background-color: #00823b;
+  border-radius: 0;
+  box-shadow: 0 2px 0 #003518;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover,
+.btn:hover,
+.interview_slot_book_button:hover {
+  background-color: #006435;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+button:focus,
+.btn:focus,
+.interview_slot_book_button:focus {
+  outline: 3px solid #ffbf47;
+  background-color: #006435;
+  color: #fff;
+}
+
+.forgot_pass_link {
+  padding-left: 6px 12px;
+}
+
+.navbar-toggle {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.navbar-toggle:focus {
+  outline: 3px solid #ffbf47;
+  background: transparent;
+}
+
+.navbar-toggle:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+a.social-media-link {
+  text-decoration: none !important;
+}
+
+.user-head-section {
+  margin: 10px 0;
+}
+
+span.required {
+  color: red;
+}
+
+div.content {
+  max-width: 996px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+#main-content {
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.left-column.col-md-3 {
+  margin-top: 20px;
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+label[for="fulltext_field_search"] {
+  display: block;
+}
+
+#fulltext_field_search {
+  width: 75%;
+  display: inline-block;
+}
+
+#fulltext_button {
+  position: relative;
+  top: -1px;
+}
+
+p.below-agent-link {
+  margin-top: 10px;
+}
+
+a#cookie_policy_link {
+  position: relative;
+  top: -40px;
+  right: 20px;
+}
+
+.nav-top {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.candidate-opp-tile {
+  padding: 0;
+  border-bottom: 1px solid #dee0e2;
+  padding-bottom: 10px;
+}
+
+.search-filter-group {
+  border-bottom: 1px solid #dee0e2;
+}
+
+.search-filter-group .search-filter-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-filter-group .search-filter-value input {
+  vertical-align: initial;
+}
+
+.search-filter-group .search-filter-value label {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.faq-submenu li {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+  color: #b10e1e;
+}
+
+.qtip-content {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.eform-tracker ul#trackermenu li a {
+  color: #666666;
+  font-size: 16px;
+}
+
+.interview_invite {
+  border: 1px solid #dee0e2;
+  border-radius: 0;
+}
+
+form#login_form a.btn, form#login_form button, form#register_form a.btn, form#register_form button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#vac_desc h2.sub_section_heading {
+  background-color: #e6e8e9;
+  margin: 0;
+  display: block;
+  padding: 15px 10px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea,
+.form-control,
+.select2-container.form-control {
+  border: 2px solid #6f777b;
+  border-radius: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.form-control:focus,
+.select2-container.form-control:focus {
+  outline: 3px solid #ffbf47;
+}
+
+.select2-container .select2-choice {
+  border: none;
+  background: none;
+}
+
+.select2-container .select2-choice:focus {
+  outline: 3px solid #ffbf47;
+}
+
+.header.col-md-12 {
+  padding: 0;
+}
+
+header .headerMain {
+  background: #0b0c0c;
+}
+
+header .headerMain .headerWrapper {
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0.5em 15px;
+  padding-left: 20px;
+}
+
+header .headerMain .headerWrapper ul {
+  padding: 0;
+  position: relative;
+  top: 5px;
+}
+
+header .headerMain .headerWrapper ul li {
+  display: inline-block;
+}
+
+header .headerMain .headerWrapper ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1em;
+  color: #fff;
+}
+
+header .headerMain .headerWrapper ul li a#title:hover {
+  text-decoration: underline;
+}
+
+header .headerMain .headerWrapper ul li a#logo {
+  width: 159px;
+  margin-right: 100px;
+}
+
+header .headerMain .headerWrapper ul li a#logo:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+header .headerMain .headerWrapper ul li a #crown_logo {
+  width: 35px;
+  height: 31px;
+  position: relative;
+  left: 0;
+  top: -3px;
+  margin-right: 6px;
+}
+
+header #headerBar {
+  background: #005ea5;
+  height: 10px;
+  max-width: 990px;
+  margin: auto;
+}
+
+.footer.col-md-12 {
+  padding: 0;
+}
+
+.footer.col-md-12 footer {
+  background-color: #dee0e2;
+  border-top: 1px solid #a1acb2;
+}
+
+.footer.col-md-12 footer a,
+.footer.col-md-12 footer p {
+  font-size: 16px;
+  color: #454a4c;
+}
+
+.footer.col-md-12 footer a {
+  text-decoration: underline;
+}
+
+.footer.col-md-12 footer a:hover {
+  text-decoration: none;
+}
+
+.footer.col-md-12 footer .footerWrapper {
+  max-width: 1020px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.footer.col-md-12 footer .footerWrapper .footer-meta {
+  width: 100%;
+  padding: 0 30px 60px 15px;
+  display: inline-block;
+}
+
+.footer.col-md-12 footer .footerWrapper .footer-meta ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer.col-md-12 footer .footerWrapper .footer-meta ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer.col-md-12 footer .footerWrapper .footer-meta .acc_heading {
+  position: absolute;
+  left: -999em;
+}
+
+.footer.col-md-12 footer .footerWrapper .footer-meta .open-government-licence {
+  margin-top: 20px;
+}
+
+.footer.col-md-12 footer .footerWrapper .footer-meta .open-government-licence #logoLink:focus {
+  background: none;
+}
+
+.footer.col-md-12 footer .footerWrapper .footer-meta .open-government-licence #logoLink img {
+  position: relative;
+  top: -3px;
+}
+
+.footer.col-md-12 footer .footerWrapper .copyright {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer.col-md-12 footer .footerWrapper .copyright a {
+  text-decoration: none;
+}
+
+.footer.col-md-12 footer .footerWrapper .copyright a img {
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  form#login_form a.btn, form#login_form button, form#register_form a.btn, form#register_form button {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 990px) {
+  .eform-tracker {
+    border-right: 1px solid #dee0e2;
+  }
+  #main-content {
+    min-height: 540px;
+  }
+  .user-head-section {
+    text-align: right;
+    max-width: 1280px;
+    margin: 10px auto;
+    float: none;
+  }
+  header .headerMain .headerWrapper {
+    padding-left: 0;
+  }
+  .footer.col-md-12 footer .footerWrapper .footer-meta {
+    width: 75%;
+  }
+  .footer.col-md-12 footer .footerWrapper .copyright {
+    width: 24%;
+  }
+  .candidate-opp-tile {
+    border-bottom: none;
+  }
+}
+
+/* Vacancy Form Logos */
+#form_label_45670_1{
+  background: url(img/cabinet_office.jpg) top left no-repeat transparent;
+}

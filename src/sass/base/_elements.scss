@@ -1,0 +1,54 @@
+html,
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+}
+
+body {
+    @include core-16;
+    letter-spacing: .5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: $link-colour;
+    text-decoration: underline;
+
+    &:focus {
+        @include focus-state;
+    }
+
+    &:hover {
+        color: $link-hover-colour;
+        text-decoration: underline;
+    }
+}
+
+h1 {
+    @include bold-48;
+    margin-top: .46875em;
+    margin-bottom: .9375em;
+
+    @include media(tablet) {
+        margin-top: .625em;
+        margin-bottom: 1.25em;
+    }
+}
+
+p {
+    @include core-19;
+    max-width: 570px;
+}
+
+br {
+    display: none;
+}
