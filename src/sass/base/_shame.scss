@@ -53,3 +53,22 @@ form.cand_account_form {
 .eform_page_title {
     @include bold-36;
 }
+
+.app-status-desc,
+.app-status-process-buttons,
+.app-status,
+.app-status h3,
+.app-heading {
+    padding: 0;
+    margin: 0;
+}
+
+.app-status-process-buttons,
+.app-status,
+.app-heading {
+    margin-bottom: $gutter;
+}
+
+.app-status-desc br {
+    display: inline;
+}
