@@ -140,10 +140,13 @@ textarea.form-control {
     }
 }
 
-div.hform_label,
-div.hform_label p {
+div.hform_label {
     @include bold-24;
     margin-bottom: $gutter-one-quarter;
+
+    ul {
+        @include core-19;
+    }
 }
 
 .field-info {
