@@ -57,6 +57,10 @@ select {
         @include focus-state;
         border-color: $text-colour;
     }
+
+    .has-feedback & {
+        padding-right: 4px;
+    }
 }
 
 select.form-control {
@@ -134,4 +138,40 @@ textarea.form-control {
             opacity: 0;
         }
     }
+}
+
+div.hform_label {
+    @include bold-24;
+    margin-bottom: $gutter-one-quarter;
+}
+
+.field-info {
+    @include core-19;
+    color: #6f777b;
+    height: auto;
+    left: auto;
+    padding: 5px 0 0 0;
+    position: relative;
+    right: auto !important;
+    text-align: left;
+    top: auto;
+    width: auto;
+
+    &::before {
+        display: none;
+    }
+
+    .hidden {
+        display: block !important;
+    }
+}
+
+.form_datetime_wrapper {
+    select {
+        margin-right: 10px;
+    }
+}
+
+.dialcode {
+    margin-right: 10px;
 }
