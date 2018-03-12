@@ -140,7 +140,8 @@ textarea.form-control {
     }
 }
 
-div.hform_label {
+div.hform_label,
+div.hform_label p {
     @include bold-24;
     margin-bottom: $gutter-one-quarter;
 }
