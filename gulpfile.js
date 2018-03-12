@@ -5,11 +5,12 @@ const rename = require('gulp-rename');
 const argv = require('yargs').argv;
 const autoprefixer = require('gulp-autoprefixer');
 
+const SASS_ENTRY = './src/sass/screen.scss';
 const SASS_SRC = './src/sass/**/*.scss';
 const CSS_DEST = './dist/css';
 const CSS_MAPS_DEST = './maps';
 const CSS_FILENAME = argv.production ? 'cand-default.min.css' : 'cand-default.css';
-const ASSET_FOLDERS = ['./src/img/**/*'];
+const ASSET_FOLDERS = ['./src/img/**/*', './src/fonts/**/*'];
 
 gulp.task('sass', () => {
     const sassConfig = {
@@ -21,7 +22,7 @@ gulp.task('sass', () => {
         cascade: true
     };
 
-    return gulp.src(SASS_SRC)
+    return gulp.src(SASS_ENTRY)
         .pipe(sourcemaps.init())
         .pipe(sass(sassConfig).on('error', sass.logError))
         .pipe(autoprefixer(autoprefixerConfig))

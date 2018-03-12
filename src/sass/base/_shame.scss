@@ -9,7 +9,12 @@ body.fasttrack {
 .social-media-login-links,
 .cookie-policy,
 .nav-top,
-.user-head-section {
+.user-head-section,
+#options,
+#symbol_key,
+.opportunity-application-title,
+a[name=startcontent],
+.hform_req_ph {
     display: none;
 }
 
@@ -43,4 +48,8 @@ form.cand_account_form {
     display: block;
     margin: 0 0 $gutter-half;
     text-align: left;
+}
+
+.eform_page_title {
+    @include bold-36;
 }

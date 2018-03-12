@@ -1,0 +1,76 @@
+#trackermenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .menuitem {
+        margin: 0;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        display: block;
+
+        &.current_page {
+            a {
+                background-color: #005ea5;
+                color: $white !important;
+                font-weight: normal;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        &.tracker_stat_complete {
+            &.current_page {
+                a {
+                    &::before {
+                        color: $white;
+                    }
+                }
+            }
+
+            a {
+                &::before {
+                    @extend .ion;
+                    color: #00823b;
+                    content: "\f3fd";
+                    font-size: 32px;
+                    font-weight: bold;
+                    left: 10px;
+                    position: absolute;
+                    top: 6px;
+                }
+            }
+        }
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        background-color: white;
+        border: 0;
+        color: #005ea5 !important;
+        padding: 15px 25px 11px 30px;
+        position: relative;
+
+        &::after {
+            top: calc(50% - 8px);
+            right: 10px;
+            position: absolute;
+            content: "\203A";
+        }
+
+        &:hover {
+            background-color: #dee0e2;
+            color: #005ea5;
+        }
+    }
+
+    .glyphicon {
+        display: none;
+    }
+}

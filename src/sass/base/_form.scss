@@ -19,12 +19,8 @@ select {
 
 .form-group,
 .form-horizontal .form-group {
-    margin: 0 0 $gutter-half;
+    margin: 0 0 $gutter;
     padding: 0;
-
-    @include media(tablet) {
-        margin: 0 0 $gutter;
-    }
 
     &.item_error {
         border-left: 5px solid $error-colour;
@@ -43,7 +39,7 @@ select {
     float: none;
     line-height: 1.31579;
     margin: 0;
-    padding: 0 0 2px;
+    padding: 0 0 5px;
     text-align: left;
     width: auto;
 }
@@ -63,9 +59,79 @@ select {
     }
 }
 
+select.form-control {
+    display: inline-block;
+    max-width: 100%;
+    width: auto;
+}
+
 input.form-control,
 textarea.form-control {
     -webkit-appearance: none;
     border-radius: 0;
     width: 100%;
+}
+
+.radio_group {
+    @include clearfix;
+
+    input {
+        position: absolute;
+        left: -9999px;
+        top: 4px;
+        opacity: 0;
+
+        &:checked {
+            & + label {
+                &::after {
+                    zoom: 1;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    label {
+        @include core-19;
+        cursor: pointer;
+        float: left;
+        display: block;
+        margin: 0 $gutter 0 0;
+        padding: 8px 10px 9px 50px;
+        position: relative;
+        touch-action: manipulation;
+
+        @include media(tablet) {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+
+        &::before {
+            content: "";
+            border: 2px solid;
+            background: transparent;
+            width: 38px;
+            height: 38px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+        }
+
+        &::after {
+            content: "";
+            border: 10px solid;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 9px;
+            left: 9px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            zoom: 1;
+            filter: alpha(opacity=0);
+            opacity: 0;
+        }
+    }
 }

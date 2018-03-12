@@ -6,20 +6,57 @@
     padding: 0;
 }
 
-.content {
+div.content {
     @include clearfix;
     background-color: $white;
-    margin: 0;
+    margin: $gutter auto;
+    max-width: 1020px;
     padding: 0 $gutter-half;
 
+    @include media(tablet) {
+        padding: 0 $gutter;
+    }
+
     #main-content {
-        margin: 0 auto;
-        max-width: 990px;
-        padding: 40px $gutter-half 30px;
-        width: 100%;
+        padding: 0 0 30px;
     }
 }
 
 .login-existing-users {
     // max-width: 570px;
+}
+
+.eform_page {
+    margin: 0;
+}
+
+.pg-eform {
+    .left-column {
+
+        @include media(tablet) {
+            float: left;
+            margin: $gutter 0;
+            width: 240px;
+        }
+    }
+
+    #main-content.right-column {
+        overflow: hidden;
+        width: auto;
+
+        @include media(tablet) {
+            border-left: 1px solid #bfc1c3;
+            margin: $gutter 0;
+            min-height: 900px;
+            padding-left: $gutter;
+        }
+    }
+}
+
+.eform-tracker {
+    margin-top: 0;
+
+    .leftmenu_title {
+        display: none;
+    }
 }
