@@ -140,6 +140,69 @@ textarea.form-control {
     }
 }
 
+.type_checkbox {
+    input[type=checkbox] {
+        position: absolute;
+        left: -9999px;
+
+        &:checked {
+            & + label {
+                &::after {
+                    zoom: 1;
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+    .form_value {
+
+        label {
+            cursor: pointer;
+            padding: 8px 10px 9px 40px;
+            display: block;
+            touch-action: manipulation;
+            float: left;
+            padding-top: 7px;
+            padding-bottom: 7px;
+
+            &::before {
+                content: "";
+                border: 2px solid;
+                background: transparent;
+                width: 34px;
+                height: 34px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            &::after {
+                content: "";
+                border: solid;
+                border-width: 0 0 5px 5px;
+                background: transparent;
+                border-top-color: transparent;
+                width: 20px;
+                height: 11px;
+                position: absolute;
+                top: 9px;
+                left: 7px;
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                zoom: 1;
+                filter: alpha(opacity=0);
+                opacity: 0;
+            }
+        }
+
+    }
+}
+
 div.hform_label {
     @include bold-24;
     margin-bottom: $gutter-one-quarter;
